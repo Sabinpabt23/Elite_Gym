@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Elite Fitness</title>
+    <link rel="stylesheet" href="../css/Shop.css">
+    <script src="../js/Shop.js" defer></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">Elite Fitness</a>
+            </div>
+            <nav>
+                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="GymTypes.html"><i class="fas fa-dumbbell"></i> Plans</a>
+                <a href="AboutUs.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="BLog.html"><i class="fas fa-blog"></i> Blog</a>
+                <a href="Shop.html" class="active"><i class="fas fa-shopping-cart"></i> Shop</a>
+                <a href="ContactUs.html"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="Cart.html" class="cart-link">
+    <i class="fas fa-shopping-cart"></i> 
+    <span class="cart-count">0</span>
+</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Shop Hero Section -->
+    <section class="shop-hero">
+        <div class="shop-hero-content">
+            <h1>Elite Fitness Shop</h1>
+            <p>Premium supplements, equipment, and apparel to fuel your fitness journey</p>
+        </div>
+    </section>
+
+    <!-- Shop Content -->
+    <section class="shop-container">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar">
+            <div class="filter-section">
+                <h3>Categories</h3>
+                <ul class="category-list">
+                    <li><a href="#" class="active">All Products</a></li>
+                    <li><a href="#">Protein & Supplements</a></li>
+                    <li><a href="#">Gym Equipment</a></li>
+                    <li><a href="#">Apparel</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Price Range</h3>
+                <div class="price-range">
+                    <input type="range" min="0" max="5000" value="5000" class="slider" id="priceRange">
+                    <div class="price-values">
+                        <span>Rs.0</span>
+                        <span>Rs.5000</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-section">
+                <h3>Brands</h3>
+                <div class="brand-options">
+                    <label><input type="checkbox" checked> Optimum Nutrition</label>
+                    <label><input type="checkbox" checked> MuscleTech</label>
+                    <label><input type="checkbox" checked> Dymatize</label>
+                    <label><input type="checkbox" checked> Nike</label>
+                    <label><input type="checkbox" checked> Adidas</label>
+                </div>
+            </div>
+            
+            <button class="filter-btn">Apply Filters</button>
+        </aside>
+
+        <!-- Main Products Section -->
+        <main class="shop-main">
+            <div class="shop-header">
+                <div class="sort-options">
+                    <span>Sort by:</span>
+                    <select>
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Customer Rating</option>
+                        <option>Newest Arrivals</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search products...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">BESTSELLER</div>
+                    <div class="product-img">
+                        <img src="../image/products/wheyProtien.jpeg" alt="Whey Protein">
+                    </div>
+                    <div class="product-info">
+                        <h3>Optimum Nutrition Gold Standard Whey</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(124)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.4,500</span>
+                            <span class="original-price">Rs.5,500</span>
+                            <span class="discount">18% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-img">
+                        <img src="../image/products/Dumbbell.jpeg" alt="Dumbbells">
+                    </div>
+                    <div class="product-info">
+                        <h3>Adjustable Dumbbells 20kg Set</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(87)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.3,200</span>
+                            <span class="original-price">Rs.3,800</span>
+                            <span class="discount">16% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="../image/products/gloves.jpeg" alt="Gym Gloves">
+                    </div>
+                    <div class="product-info">
+                        <h3>Professional Gym Gloves</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.1,200</span>
+                            <span class="original-price">Rs.1,500</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-badge">LIMITED</div>
+                    <div class="product-img">
+                        <img src="../image/products/protein-shaker.jpeg" alt="Protein Shaker">
+                    </div>
+                    <div class="product-info">
+                        <h3>BlenderBottle Pro Series Shaker</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(92)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.800</span>
+                            <span class="original-price">Rs.1,200</span>
+                            <span class="discount">33% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="../image/products/gym-bag.jpeg" alt="Gym Bag">
+                    </div>
+                    <div class="product-info">
+                        <h3>Elite Fitness Gym Backpack</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(64)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.2,500</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-badge">HOT</div>
+                    <div class="product-img">
+                        <img src="../image/products/creatine.jpeg" alt="Creatine">
+                    </div>
+                    <div class="product-info">
+                        <h3>MuscleTech Platinum Creatine</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(203)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rs.2,800</span>
+                            <span class="original-price">Rs.3,500</span>
+                            <span class="discount">20% off</span>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Add to Cart</button>
+                            <button class="buy-now">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#"><i class="fas fa-chevron-right"></i></a>
+            </div>
+        </main>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Get Exclusive Offers!</h2>
+            <p>Subscribe to our newsletter for special discounts and fitness tips</p>
+            <form>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../index.html">Elite Fitness</a>
+                <p>Your journey to a healthier life starts here.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="GymTypes.html">Plans</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="BLog.html">Blog</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Kathmandu</p>
+                <p><i class="fas fa-phone"></i> +977 9801234567</p>
+                <p><i class="fas fa-envelope"></i> info@elitefitness.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="../js/Shop.js"></script>
+</body>
+</html>

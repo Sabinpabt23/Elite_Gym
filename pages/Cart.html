@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Elite Fitness</title>
+    <link rel="stylesheet" href="../css/Cart.css">
+    <script src="../js/Cart.js" defer></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cart Hero Section -->
+    <section class="cart-hero">
+        <div class="cart-hero-content">
+            <h1>Your Shopping Cart</h1>
+            <p>Review and checkout your selected items</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-container">
+        <div class="cart-items">
+            <h2>Your Items (<span class="cart-count">0</span>)</h2>
+            <div class="cart-empty">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="Shop.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+            <div class="cart-filled" style="display: none;">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="cart-items-list">
+                        <!-- Cart items will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <h3>Order Summary</h3>
+            <div class="summary-details">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="cart-subtotal">Rs.0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span>Rs.200</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="cart-total">Rs.200</span>
+                </div>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+            <a href="Shop.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Shop
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../index.html">Elite Fitness</a>
+                <p>Your journey to a healthier life starts here.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="GymTypes.html">Plans</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="BLog.html">Blog</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Kathmandu</p>
+                <p><i class="fas fa-phone"></i> +977 9801234567</p>
+                <p><i class="fas fa-envelope"></i> info@elitefitness.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/Cart.js"></script>
+</body>
+</html>

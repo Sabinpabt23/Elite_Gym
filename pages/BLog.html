@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Blog - Elite Fitness</title>
+    <link rel="stylesheet" href="../css/Blog.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">Elite Fitness</a>
+            </div>
+            <nav>
+                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="GymTypes.html"><i class="fas fa-dumbbell"></i> Plans</a>
+                <a href="AboutUs.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="BLog.html" class="active"><i class="fas fa-blog"></i> Blog</a>
+                <a href="Shop.html"><i class="fas fa-shop"></i> Shop</a>
+                <a href="ContactUs.html"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+        <div class="hero-content">
+            <h1>Elite Fitness Blog</h1>
+            <p class="hero-subtitle">Expert advice, inspiring stories, and the latest fitness trends</p>
+            <div class="hero-search">
+                <input type="text" placeholder="Search articles...">
+                <button><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <main class="blog-container">
+        <!-- Featured Post -->
+        <section class="featured-post">
+            <div class="featured-content">
+                <span class="category-badge">Featured</span>
+                <h2>The Ultimate Guide to Building Lean Muscle</h2>
+                <p class="post-meta"><span class="author">By Sabin Pant</span> | <span class="date"><i class="far fa-calendar-alt"></i> June 20, 2025</span></p>
+                <p class="excerpt">Discover science-backed strategies for maximizing muscle growth while minimizing fat gain. Our head trainer shares his decade of experience in this comprehensive guide.</p>
+                <a href="#" class="read-more-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="featured-image">
+                <img src="../image/featured-post.jpeg" alt="Building Lean Muscle">
+            </div>
+        </section>
+
+        <!-- Blog Content Grid -->
+        <div class="blog-content-grid">
+            <!-- Main Content -->
+            <div class="main-content">
+                <!-- Category Filter -->
+                <div class="category-filter">
+                    <h3>Categories:</h3>
+                    <div class="filter-buttons">
+                        <button class="active">All Articles</button>
+                        <button>Workouts</button>
+                        <button>Nutrition</button>
+                        <button>Success Stories</button>
+                        <button>Wellness</button>
+                        <button>Expert Tips</button>
+                    </div>
+                </div>
+
+                <!-- Blog Posts Grid -->
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/hiit.jpeg" alt="HIIT Workout">
+                            <span class="category-tag">Workouts</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>5 Quick HIIT Workouts You Can Do at Home</h3>
+                            <p class="post-meta"><span class="author">By Rabin Pant</span> | <span class="date"><i class="far fa-calendar-alt"></i> June 15, 2025</span></p>
+                            <p class="post-excerpt">High-Intensity Interval Training is a powerful fat-burning tool. Discover quick and effective routines that take less than 20 minutes!</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/Nutrition.jpeg" alt="Healthy Food">
+                            <span class="category-tag">Nutrition</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>Nutrition Tips for Better Results</h3>
+                            <p class="post-meta"><span class="author">By Ronish Rai</span> | <span class="date"><i class="far fa-calendar-alt"></i> June 10, 2025</span></p>
+                            <p class="post-excerpt">Your diet matters just as much as your reps. Learn what to eat before and after workouts for maximum gains and recovery.</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/Result.jpeg" alt="Fitness Transformation">
+                            <span class="category-tag">Success Stories</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>Member Spotlight: Rina's Transformation</h3>
+                            <p class="post-meta"><span class="author">By Elite Team</span> | <span class="date"><i class="far fa-calendar-alt"></i> June 5, 2025</span></p>
+                            <p class="post-excerpt">Rina joined our Premium Plan 6 months ago. Here's how she lost 12kg and gained a whole new perspective on fitness and health.</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 4 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/Mental.jpeg" alt="Mental Health">
+                            <span class="category-tag">Wellness</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>The Mental Benefits of Regular Exercise</h3>
+                            <p class="post-meta"><span class="author">By Sabin Pant</span> | <span class="date"><i class="far fa-calendar-alt"></i> May 28, 2025</span></p>
+                            <p class="post-excerpt">Exercise isn't just for the body — it's a powerful tool for your mental health. Find out how training improves focus, mood, and cognitive function.</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 5 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/yoga.jpeg" alt="Yoga for Fitness">
+                            <span class="category-tag">Workouts</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>Yoga for Strength and Flexibility</h3>
+                            <p class="post-meta"><span class="author">By Guest Expert</span> | <span class="date"><i class="far fa-calendar-alt"></i> May 20, 2025</span></p>
+                            <p class="post-excerpt">Combine yoga with your fitness routine to improve flexibility, reduce injury risk, and enhance recovery between intense workouts.</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 9 min read</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Post 6 -->
+                    <article class="blog-post">
+                        <div class="post-image">
+                            <img src="../image/Protien.jpeg" alt="Protein Guide">
+                            <span class="category-tag">Nutrition</span>
+                        </div>
+                        <div class="post-content">
+                            <h3>The Ultimate Protein Guide for Athletes</h3>
+                            <p class="post-meta"><span class="author">By Rabin Pant</span> | <span class="date"><i class="far fa-calendar-alt"></i> May 15, 2025</span></p>
+                            <p class="post-excerpt">How much protein do you really need? Debunking myths and sharing science-backed recommendations for optimal muscle recovery.</p>
+                            <div class="post-footer">
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                <span class="read-time"><i class="far fa-clock"></i> 10 min read</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-nav disabled"><i class="fas fa-chevron-left"></i> Previous</a>
+                    <div class="page-numbers">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <span>...</span>
+                        <a href="#">8</a>
+                    </div>
+                    <a href="#" class="page-nav">Next <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- About Widget -->
+                <div class="sidebar-widget about-widget">
+                    <h3>About The Blog</h3>
+                    <div class="widget-content">
+                        <img src="../image/blog-about.jpeg" alt="About Elite Fitness Blog">
+                        <p>The Elite Fitness Blog brings you expert advice, workout plans, nutrition tips, and inspiring stories to help you achieve your fitness goals.</p>
+                        <a href="AboutUs.html" class="learn-more">Learn More About Us</a>
+                    </div>
+                </div>
+
+                <!-- Popular Posts -->
+                <div class="sidebar-widget popular-posts">
+                    <h3>Popular Articles</h3>
+                    <div class="widget-content">
+                        <div class="popular-post">
+                            <img src="../image/popular1.jpeg" alt="Popular Post">
+                            <div class="post-info">
+                                <h4><a href="#">10 Mistakes Killing Your Gains</a></h4>
+                                <span class="date">May 10, 2025</span>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <img src="../image/popular2.jpeg" alt="Popular Post">
+                            <div class="post-info">
+                                <h4><a href="#">Morning Routine for Fat Loss</a></h4>
+                                <span class="date">April 28, 2025</span>
+                            </div>
+                        </div>
+                        <div class="popular-post">
+                            <img src="../image/popular3.jpeg" alt="Popular Post">
+                            <div class="post-info">
+                                <h4><a href="#">Supplements That Actually Work</a></h4>
+                                <span class="date">April 15, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="sidebar-widget newsletter-widget">
+                    <h3>Stay Updated</h3>
+                    <div class="widget-content">
+                        <p>Get the latest fitness tips and exclusive content delivered to your inbox weekly.</p>
+                        <form class="newsletter-form">
+                            <input type="text" placeholder="Your Name">
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit">Subscribe <i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Social Widget -->
+                <div class="sidebar-widget social-widget">
+                    <h3>Follow Us</h3>
+                    <div class="widget-content">
+                        <div class="social-links">
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../index.html">Elite Fitness</a>
+                <p>Your journey to a healthier life starts here.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="GymTypes.html">Membership Plans</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                    <li><a href="BLog.html">Fitness Blog</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Info</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Kathmandu, Nepal</p>
+                <p><i class="fas fa-phone"></i> +977 9801234567</p>
+                <p><i class="fas fa-envelope"></i> info@elitefitness.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 6AM-10PM | Sat-Sun: 8AM-8PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Fitness. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="../js/Blog.js"></script>
+</body>
+</html>

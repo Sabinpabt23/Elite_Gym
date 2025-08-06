@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Elite Fitness</title>
+    <link rel="stylesheet" href="../css/Register.css">
+    <script src="../js/Register.js"></script>
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="../index.html">Elite Fitness</a>
+            </div>
+            <nav>
+                <a href="../index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="GymTypes.html"><i class="fas fa-dumbbell"></i> Plans</a>
+                <a href="AboutUs.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="BLog.html"><i class="fas fa-blog"></i> Blog</a>
+                <a href="Shop.html"><i class="fas fa-shop"></i> Shop</a>
+                <a href="ContactUs.html"><i class="fas fa-envelope"></i> Contact</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Container -->
+    <main class="registration-container">
+        <div class="registration-header">
+            <h1><i class="fas fa-user-plus"></i> Complete Your Registration</h1>
+            <div class="progress-steps">
+                <div class="step active">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Plan Selection</span>
+                </div>
+                <div class="step active">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Personal Details</span>
+                </div>
+                <div class="step active">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Payment</span>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Confirmation</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="registration-content">
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h2><i class="fas fa-receipt"></i> Order Summary</h2>
+                <div class="summary-card">
+                    <div class="plan-info">
+                        <h3>Premium Membership</h3>
+                        <p class="plan-duration">12-month plan</p>
+                        <p class="plan-price">$79.00/month</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 24/7 gym access</li>
+                            <li><i class="fas fa-check"></i> Personal trainer sessions</li>
+                            <li><i class="fas fa-check"></i> Nutrition consultation</li>
+                            <li><i class="fas fa-check"></i> All group classes included</li>
+                        </ul>
+                    </div>
+                    <div class="order-total">
+                        <div class="total-row">
+                            <span>Subtotal:</span>
+                            <span>$948.00</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax:</span>
+                            <span>$94.80</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total:</span>
+                            <span>$1,042.80</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="security-badges">
+                    <div class="badge">
+                        <i class="fas fa-lock"></i>
+                        <span>Secure Payment</span>
+                    </div>
+                    <div class="badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>SSL Encrypted</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="registration-form">
+                <h2><i class="fas fa-credit-card"></i> Payment Information</h2>
+                
+                <form id="payment-form">
+                    <!-- Personal Information -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+                        <div class="payment-methods">
+                            <div class="payment-method active">
+                                <i class="fab fa-cc-visa"></i>
+                                <span>Credit/Debit Card</span>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fab fa-paypal"></i>
+                                <span>PayPal</span>
+                            </div>
+                        </div>
+
+                        <!-- Credit Card Form -->
+                        <div class="credit-card-form">
+                            <div class="form-group">
+                                <label for="card-number">Card Number</label>
+                                <div class="card-input">
+                                    <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                                    <div class="card-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="expiry-date">Expiry Date</label>
+                                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                                    <i class="fas fa-question-circle" title="3-digit code on back of card"></i>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="card-name">Name on Card</label>
+                                <input type="text" id="card-name" name="card-name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Billing Address -->
+                    <div class="form-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Billing Address</h3>
+                        <div class="form-group">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="zip">ZIP Code</label>
+                                <input type="text" id="zip" name="zip" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select Country</option>
+                                <option value="US">United States</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="NP" selected>Nepal</option>
+                                <option value="IN">India</option>
+                                <option value="CA">Canada</option>
+                                <option value="AU">Australia</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Terms and Conditions -->
+                    <div class="form-section terms">
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" checked>
+                            <label for="newsletter">Subscribe to our newsletter for fitness tips and offers</label>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-lock"></i> Complete Payment ($1,042.80)
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="../index.html">Elite Fitness</a>
+                <p>Your journey to a healthier life starts here.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="GymTypes.html">Plans</a></li>
+                    <li><a href="AboutUs.html">About</a></li>
+                    <li><a href="BLog.html">Blog</a></li>
+                    <li><a href="ContactUs.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness St, Kathmandu</p>
+                <p><i class="fas fa-phone"></i> +977 9801234567</p>
+                <p><i class="fas fa-envelope"></i> info@elitefitness.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Fitness. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="../js/Register.js"></script>
+</body>
+</html>

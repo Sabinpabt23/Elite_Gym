@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Elite Fitness | Premium Gym & Fitness Centers</title>
+    <meta name="description" content="Elite Fitness offers premium gym memberships, personal training, and nutrition plans in Kathmandu. Transform your body with our state-of-the-art facilities and expert trainers.">
+    <link rel="stylesheet" href="css/Home.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="Elite Fitness Logo">
+                    <span>Elite Fitness</span>
+                </a>
+            </div>
+            <nav>
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="pages/GymTypes.html"><i class="fas fa-dumbbell"></i> Plans</a>
+                <a href="pages/AboutUs.html"><i class="fas fa-info-circle"></i> About</a>
+                <a href="pages/BLog.html"><i class="fas fa-blog"></i> Blog</a>
+                <a href="pages/Shop.html"><i class="fas fa-shop"></i> Shop</a>
+                <a href="pages/ContactUs.html"><i class="fas fa-envelope"></i> Contact</a>
+                <a href="pages/Cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero">
+        <div class="hero-video">
+            <video autoplay muted loop>
+                <source src="video/hero-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Transform Your Body, Elevate Your Life</h1>
+            <p>Join Nepal's premier fitness community with personalized training, expert guidance, and world-class facilities.</p>
+            <div class="hero-buttons">
+                <a href="pages/GymTypes.html" class="btn btn-primary">View Membership Plans</a>
+                <a href="pages/ContactUs.html" class="btn btn-secondary">Book Free Consultation</a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Members Transformed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Certified Trainers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Premium Access</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <span class="section-subtitle">Why Choose Us</span>
+            <h2>The Elite Fitness Difference</h2>
+            <p>We don't just change bodies - we transform lives through comprehensive fitness solutions</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-shield"></i>
+                </div>
+                <h3>World-Class Trainers</h3>
+                <p>Our certified professionals including Sabin Pant and Rabin Pant provide personalized guidance tailored to your goals.</p>
+                <a href="pages/AboutUs.html" class="feature-link">Meet our team <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h3>Nutrition Planning</h3>
+                <p>Customized diet consultations and meal plans included with our Premium membership for holistic results.</p>
+                <a href="pages/BLog.html" class="feature-link">Nutrition articles <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <h3>Proven Methodologies</h3>
+                <p>Evidence-based training programs that deliver measurable results, backed by science and success stories.</p>
+                <a href="pages/BLog.html" class="feature-link">Success stories <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Premium Facilities</h3>
+                <p>State-of-the-art equipment, luxury amenities, and meticulously maintained spaces for your comfort.</p>
+                <a href="pages/AboutUs.html#facilities" class="feature-link">View facilities <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Plans Preview -->
+    <section class="plans-preview">
+        <div class="section-header">
+            <span class="section-subtitle">Flexible Options</span>
+            <h2>Membership Plans</h2>
+            <p>Choose the perfect plan to match your fitness goals and lifestyle</p>
+        </div>
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-header">
+                    <h3>Regular Plan</h3>
+                    <div class="price">Rs.3,500<span>/month</span></div>
+                    <p class="plan-description">Ideal for self-motivated individuals</p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check-circle"></i> Full gym access (6AM-10PM)</li>
+                    <li><i class="fas fa-check-circle"></i> Locker & shower facilities</li>
+                    <li><i class="fas fa-check-circle"></i> 5 group classes per week</li>
+                    <li><i class="fas fa-check-circle"></i> Free fitness assessment</li>
+                    <li><i class="fas fa-check-circle"></i> Basic progress tracking</li>
+                </ul>
+                <div class="plan-cta">
+                    <a href="pages/GymTypes.html" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="plan-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Premium Plan</h3>
+                    <div class="price">Rs.9,500<span>/month</span></div>
+                    <p class="plan-description">For maximum results with expert guidance</p>
+                </div>
+                <ul class="plan-features">
+                    <li><i class="fas fa-check-circle"></i> Everything in Regular Plan</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 facility access</li>
+                    <li><i class="fas fa-check-circle"></i> 4 personal training sessions</li>
+                    <li><i class="fas fa-check-circle"></i> Custom nutrition plan</li>
+                    <li><i class="fas fa-check-circle"></i> Advanced body composition analysis</li>
+                    <li><i class="fas fa-check-circle"></i> Unlimited group classes</li>
+                </ul>
+                <div class="plan-cta">
+                    <a href="pages/GymTypes.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <div class="plans-footer">
+            <p>Not sure which plan is right for you? <a href="pages/ContactUs.html">Schedule a free consultation</a> with our team.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <span class="section-subtitle">Our Facility</span>
+            <h2>World-Class Training Environment</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="image/gym-floor.jpeg" alt="Gym Floor">
+                <div class="gallery-overlay">
+                    <h3>Training Floor</h3>
+                    <p>3,000 sq ft of premium equipment</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/group-class.jpeg" alt="Group Class">
+                <div class="gallery-overlay">
+                    <h3>Group Studio</h3>
+                    <p>25+ weekly classes</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/locker-rooms.jpeg" alt="Locker Room">
+                <div class="gallery-overlay">
+                    <h3>Luxury Amenities</h3>
+                    <p>Premium locker rooms & showers</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="image/functional-area.jpeg" alt="Functional Area">
+                <div class="gallery-overlay">
+                    <h3>Functional Zone</h3>
+                    <p>Dedicated space for functional training</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <span class="section-subtitle">Success Stories</span>
+            <h2>What Our Members Say</h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"Joining Elite Fitness was the best decision I made for my health. The trainers are incredibly knowledgeable and the community is so supportive. I've lost 12kg in 3 months!"</p>
+                    <div class="member-info">
+                        <img src="image/Rina.jpeg" alt="Rina">
+                        <div>
+                            <h4>Rina S.</h4>
+                            <span>Premium Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="quote">"The facilities are top-notch and always clean. I love the variety of equipment and classes. The Regular Plan gives me everything I need at a great price."</p>
+                    <div class="member-info">
+                        <img src="image/Alex.jpeg" alt="Alex">
+                        <div>
+                            <h4>Alex M.</h4>
+                            <span>Regular Member</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="quote">"The nutrition guidance combined with personalized training helped me achieve my competition goals. Elite Fitness is truly in a class of its own."</p>
+                    <div class="member-info">
+                        <img src="image/competitors.jpeg" alt="Competitor">
+                        <div>
+                            <h4>Raj K.</h4>
+                            <span>Bodybuilding Competitor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Preview Section -->
+    <section class="shop-preview">
+        <div class="section-header">
+            <span class="section-subtitle">Premium Products</span>
+            <h2>Featured From Our Shop</h2>
+            <p>Quality supplements and equipment to support your fitness journey</p>
+        </div>
+        <div class="product-grid-preview">
+            <!-- Product 1 -->
+            <div class="product-card-preview">
+                <div class="product-badge">Bestseller</div>
+                <div class="product-img-preview">
+                    <img src="image/products/wheyProtien.jpeg" alt="Optimum Nutrition Whey Protein">
+                </div>
+                <div class="product-info-preview">
+                    <h3>Optimum Nutrition Whey</h3>
+                    <div class="product-rating-preview">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(124 reviews)</span>
+                    </div>
+                    <div class="product-price-preview">
+                        <span class="current-price">Rs.4,500</span>
+                        <span class="original-price">Rs.5,500</span>
+                    </div>
+                    <a href="pages/Shop.html" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card-preview">
+                <div class="product-img-preview">
+                    <img src="image/products/Dumbbell.jpeg" alt="Adjustable Dumbbells">
+                </div>
+                <div class="product-info-preview">
+                    <h3>Adjustable Dumbbells</h3>
+                    <div class="product-rating-preview">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(87 reviews)</span>
+                    </div>
+                    <div class="product-price-preview">
+                        <span class="current-price">Rs.3,200</span>
+                        <span class="original-price">Rs.3,800</span>
+                    </div>
+                    <a href="pages/Shop.html" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card-preview">
+                <div class="product-badge">New</div>
+                <div class="product-img-preview">
+                    <img src="image/products/creatine.jpeg" alt="MuscleTech Creatine">
+                </div>
+                <div class="product-info-preview">
+                    <h3>MuscleTech Creatine</h3>
+                    <div class="product-rating-preview">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(203 reviews)</span>
+                    </div>
+                    <div class="product-price-preview">
+                        <span class="current-price">Rs.2,800</span>
+                        <span class="original-price">Rs.3,500</span>
+                    </div>
+                    <a href="pages/Shop.html" class="btn btn-primary">View Product</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-footer">
+            <a href="pages/Shop.html" class="btn btn-outline">View All Products</a>
+        </div>
+    </section>
+
+    <!-- Blog Preview Section -->
+    <section class="blog-preview">
+        <div class="section-header">
+            <span class="section-subtitle">Fitness Knowledge</span>
+            <h2>Latest From Our Blog</h2>
+            <p>Expert advice, workout routines, and nutrition tips to enhance your journey</p>
+        </div>
+        <div class="blog-grid-preview">
+            <!-- Article 1 -->
+            <article class="blog-card-preview">
+                <div class="blog-img-preview">
+                    <img src="image/hiit.jpeg" alt="HIIT Workout">
+                    <span class="blog-category-preview">Workouts</span>
+                </div>
+                <div class="blog-content-preview">
+                    <h3>5 Quick HIIT Workouts You Can Do at Home</h3>
+                    <p class="blog-excerpt">High-Intensity Interval Training is a powerful fat-burning tool. Discover quick and effective routines that take less than 20 minutes...</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> June 15, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="pages/BLog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <!-- Article 2 -->
+            <article class="blog-card-preview">
+                <div class="blog-img-preview">
+                    <img src="image/Nutrition.jpeg" alt="Healthy Food">
+                    <span class="blog-category-preview">Nutrition</span>
+                </div>
+                <div class="blog-content-preview">
+                    <h3>Nutrition Tips for Better Results</h3>
+                    <p class="blog-excerpt">Your diet matters just as much as your reps. Learn what to eat before and after workouts for maximum gains and recovery...</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> June 10, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 7 min read</span>
+                    </div>
+                    <a href="pages/BLog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <!-- Article 3 -->
+            <article class="blog-card-preview">
+                <div class="blog-img-preview">
+                    <img src="image/Result.jpeg" alt="Fitness Transformation">
+                    <span class="blog-category-preview">Success Stories</span>
+                </div>
+                <div class="blog-content-preview">
+                    <h3>Member Spotlight: Rina's Transformation</h3>
+                    <p class="blog-excerpt">Rina joined our Premium Plan 6 months ago. Here's how she lost 12kg and gained a new perspective on health and fitness...</p>
+                    <div class="blog-meta">
+                        <span class="blog-date"><i class="far fa-calendar-alt"></i> June 5, 2025</span>
+                        <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <a href="pages/BLog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        <div class="section-footer">
+            <a href="pages/BLog.html" class="btn btn-outline">View All Articles</a>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Ready to Begin Your Transformation?</h2>
+                <p>Take the first step today with a free consultation and tour of our facilities.</p>
+                <div class="cta-buttons">
+                    <a href="pages/ContactUs.html" class="btn btn-primary">Book Your Consultation</a>
+                    <a href="tel:+9779801234567" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Us Now</a>
+                </div>
+            </div>
+            <div class="cta-image">
+                <img src="image/cta-image.jpeg" alt="Trainer helping client">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="image/logo.png" alt="Elite Fitness Logo">
+                    <span>Elite Fitness</span>
+                </a>
+                <p>Your journey to a healthier, stronger life starts here.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com/elitefitness" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/elitefitness" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com/elitefitness" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://tiktok.com/@elitefitness" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/GymTypes.html">Membership Plans</a></li>
+                    <li><a href="pages/AboutUs.html">About Us</a></li>
+                    <li><a href="pages/BLog.html">Fitness Blog</a></li>
+                    <li><a href="pages/Shop.html">Shop</a></li>
+                    <li><a href="pages/ContactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="pages/FAQ.html">FAQs</a></li>
+                    <li><a href="pages/PrivacyPolicy.html">Privacy Policy</a></li>
+                    <li><a href="pages/Terms.html">Terms of Service</a></li>
+                    <li><a href="pages/Careers.html">Careers</a></li>
+                    <li><a href="pages/Franchise.html">Franchise Opportunities</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fitness Street, Kathmandu, Nepal</p>
+                <p><i class="fas fa-phone"></i> +977 9801234567</p>
+                <p><i class="fas fa-envelope"></i> info@elitefitness.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 6AM-10PM | Sat-Sun: 8AM-8PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Elite Fitness. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fas fa-money-bill-wave"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- JavaScript -->
+    <script src="js/Home.js"></script>
+</body>
+</html>
