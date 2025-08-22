@@ -3,87 +3,218 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rabin Pant | Portfolio</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #2c3e50;
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 0.5rem;
-    }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-    }
-    li {
-      margin-bottom: 0.5rem;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #2c3e50;
-      color: white;
-    }
-  </style>
+  <title>Sabin Pant | Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">Rabin Pant</div>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
 
-  <header>
-    <h1>Rabin Pant</h1>
-    <p>BSc (Hons) Computing Student | Kathmandu, Nepal</p>
-  </header>
-
-  <section>
-    <h2>🎓 Education</h2>
-    <ul>
-      <li><strong>Islington College</strong> – BSc (Hons) Computing (Year 2)</li>
-      <li><strong>Bagmati College</strong> – High School Graduate</li>
-    </ul>
-
-    <h2>💼 Skills</h2>
-    <ul>
-      <li>Java (OOP, Swing, lambda expressions)</li>
-      <li>Python (CLI, file I/O, modular programming)</li>
-      <li>JavaScript, CSS, SQL</li>
-      <li>Git & GitHub, Bash scripting</li>
-      <li>VS Code, Figma, UI prototyping</li>
-    </ul>
-
-    <h2>🛠️ Projects</h2>
-    <ul>
-      <li><strong>E-commerce Website</strong> – HTML, CSS, JavaScript. Designed and developed a fully responsive interface</li>
-      <li><strong>Inventory Managament System</strong> – (Console-based) – Python program </li>
-      <li><strong>Gym Management System</strong> – Java-based GUI for member tracking</li>
-    </ul>
-
-    <h2>📫 Contact</h2>
-    <ul>
-      <li>Email: rabinpant194@gmail.com</li>
-      <li>GitHub: <a href="https://github.com/Rabin-Pant" target="_blank">github.com/yourusername</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-    </ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Rabin Pant</h1>
+      <p class="hero-subtitle">BSc (Hons) Computing Student</p>
+      <p class="hero-location">Kathmandu, Nepal</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+  <div class="image-placeholder">
+    <img src="../image/rabinpant.jpg" alt="Sabin Pant">
+  </div>
+</div>
   </section>
 
-  <footer>
-    &copy; 2025 Rabin Pant. All rights reserved.
+  <!-- Education Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-cards">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="card-title">Islington College</h3>
+          <p class="card-desc">BSc (Hons) Computing (Year 2)</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-school"></i>
+          </div>
+          <h3 class="card-title">Bagmati College</h3>
+          <p class="card-desc">High School Graduate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3>Java</h3>
+          <p>OOP, Swing, Spring Boot</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>CLI, file I/O, modular programming</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Frontend development</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>SQL</h3>
+          <p>Database management</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Version control</p>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">
+            <i class="fas fa-terminal"></i>
+          </div>
+          <h3>Bash Scripting</h3>
+          <p>Command line tools</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <div class="project-content">
+            <h3>E-commerce Website</h3>
+            <p>HTML, CSS, JavaScript. Designed and developed a fully responsive interface.</p>
+            <div class="project-tags">
+              <span class="tag">Web</span>
+              <span class="tag">Frontend</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-boxes"></i>
+          </div>
+          <div class="project-content">
+            <h3>Inventory Management System</h3>
+            <p>Console-based Python program for inventory tracking and management.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">CLI</span>
+              <span class="tag">System Design</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <i class="fas fa-dumbbell"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gym Management System</h3>
+            <p>Java-based GUI application for member tracking and gym management.</p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">GUI</span>
+              <span class="tag">Swing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>rabinpant194@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <h3>GitHub</h3>
+              <a href="https://github.com/Rabin-Pant" target="_blank">github.com/Rabin-Pant</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <h3>LinkedIn</h3>
+              <a href="https://www.linkedin.com/in/rabin-pant-6b4559358/" target="_blank">linkedin.com/in/rabin-pant</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Sabin Pant. All rights reserved.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
